@@ -3,42 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <title>Exercise</title>
-    <link rel="stylesheet" href="css1.css">
-
-</head>
-<body>
+    <link rel="stylesheet" href="style/css1.css">    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+</head >
+<body ng-app>
 <div id="pagrindas">
     <div id="header">
-        <a class="htext" href="cv.html">CV</a>
-        <a class="htext" href="game1.html">Game1</a>
-        <a class="htext" href="uzdaviniai.html">Exercise</a>
         <a id="logo" href="index.html">JoRa</a>
+        <a class="htext" href="cv.html">CV</a>
+        <a class="htext" href="game1.html">Games</a>
+        <a class="htext" href="uzdaviniai.html">Exercises</a>
+        <a class="htext" href="fishing.html">Fishing</a>
     </div>
-    <div>
+    <div class="skaiciavimai">
         <h1>Uždaviniai ir jų sprendimai:</h1>
-        <p>1. Parašykite programą, kuri apskaičiuotų, kiek popieriaus lapų "k"
+        <p2>1. Parašykite programą, kuri apskaičiuotų, kiek popieriaus lapų "k"
             reikės norint nukopijuoti konspektą visos klasės mokiniams. Žinoma,
-            kad klasėje yra "m" mokinių, o konspektą sudaro "n" lapų</p>
-        <div class="sprendimas">Įveskite kiek klasėje yra mokinių: <input id="u11" type=number>
-            <br>Įveskite kiek lapų sudaro konspektą: <input id="u12" type=number>
+            kad klasėje yra "m" mokinių, o konspektą sudaro "n" lapų</p2>
+        <div class="skaiciavimas">
+            <div class="sprendimas">Įveskite kiek klasėje yra mokinių: <input id="u11" type=akys>
+            <br>Įveskite kiek lapų sudaro konspektą: <input id="u12" type=akys>
             <br><p id="ats1">Jums reikės lapų: </p>
         </div>
-        <p>11. Šeima į mėnesį gauna "n" eurų. 5% išleidžia mokesčiams, o likusius pinigus buitinėms reikmėms:
-        50proc. maistui, 30proc. rūbams ir likusius pramogoms. Programa šeimos biudžetui skaičiuoti?</p>
-        <div class="sprendimas">Įveskite kokios yra pajamos: <input id="u21" type=number>
+        <div class="sprendimasJS">
+        <p>var n1 = document.getElementById("u11");<br>
+var n2 = document.getElementById("u12");<br>
+var ats = document.getElementById("ats1");<br>
+n1.addEventListener("input", add);<br>
+n2.addEventListener("input", add);<br>
+function add(){<br>
+var one = parseFloat(n1.value) ||0;<br>
+var two = parseFloat(n2.value)||0;<br>
+ats.innerHTML ="Jums reikes: " + (one*two) + "vnt. lapu";<br>
+}</p>
+        </div>
+            </div>
+        <p2>2. Šeima į mėnesį gauna "n" eurų. 5% išleidžia mokesčiams, o likusius pinigus buitinėms reikmėms:
+        50proc. maistui, 30proc. rūbams ir likusius pramogoms. Programa šeimos biudžetui skaičiuoti?</p2>
+        <div class="skaiciavimas">
+        <div class="sprendimas">Įveskite kokios yra pajamos: <input id="u21" type=akys>
             <br><p id="ats2">mokesčiams išleidžiama: </p>
             <p id="ats3">maistui išleidžiama: </p>
             <p id="ats4">rūbams išleidžiama: </p>
             <p id="ats5">Lieka santaupų: </p>
+            </div>
+            <div class="sprendimasJS">
+                <p>var n21 = document.getElementById("u21");<br>
+var a22 = document.getElementById("ats2");<br>
+var a23 = document.getElementById("ats3");<br>
+var a24 = document.getElementById("ats4");<br>
+var a25 = document.getElementById("ats5");<br>
+n21.addEventListener("input", add2);<br>
+function add2() {<br>
+    var one2 = parseFloat(n21.value);<br>
+    var at2 = ((one2*5)/100);<br>
+    a22.innerHTML = "mokesčiams išleidžiama: " + at2 + "eur";<br>
+    a23.innerHTML = "maistui išleidžiama: " + ((one2-at2)/2) + "eur";<br>
+    a24.innerHTML = "rūbams išleidžiama: " + (((one2-at2)*30)/100) + "eur";<br>
+    a25.innerHTML = "lieka santaupu: " + (((one2-at2)*20)/100) + "eur";<br>
+}</p>
+            </div>
+        
         </div>
-        <p>3. Paros laiką galima išmatuoti valandomis, minutėmis ir sekundėmis atskirai. Apskaičiuiti kiek para turi valanų, minučių ir sekundžių?</p>
-        <div class="sprendimas">Įveskite parų skaičių: <input id="u31" type="number">
+        <div class="skaiciavimai">
+        <p2>3. Paros laiką galima išmatuoti valandomis, minutėmis ir sekundėmis atskirai. Apskaičiuiti kiek para turi valanų, minučių ir sekundžių?</p2>
+        <div class="skaiciavimas">
+            <div class="sprendimas">Įveskite parų skaičių: <input id="u31" type="akys">
             <br><p id="h1">Valandų: </p>
             <p id="min1">Minučių: </p>
-            <p id="s1">Sekundžių: </p>
+            <p id="s1">Sekundžių: </p>            
+            </div>
+            <div class="sprendimasJS">
+            <p>var n31 = document.getElementById("u31");<br>
+var a31 = document.getElementById("h1");<br>
+var a32 = document.getElementById("min1");<br>
+var a33 = document.getElementById("s1");<br>
+n31.addEventListener("input", add3);<br>
+function add3() {<br>
+    var l1 = parseFloat(n31.value);<br>
+    a31.innerHTML = "Valandų: "+ (l1*24);<br>
+    a32.innerHTML = "Minučių: "+ (l1*24*60);<br>
+    a33.innerHTML = "Sekundžių: "+ (l1*24*3600);<br>
+                }</p>
+            </div>
         </div>
     </div>
+        </div>
 </div>
-<script src="skaiciavimas.js"></script>
+<script src="style/skaiciavimas.js"></script>
 </body>
 </html>

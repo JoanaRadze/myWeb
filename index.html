@@ -2,20 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="css1.css">
+    <title>FirstJoRa</title>
+    <link rel="stylesheet" href="style/index.css">
 </head>
 <body>
 <div id="pagrindas">
     <div id="header">
-        <a class="htext" href="cv.html">CV</a>
-        <a class="htext" href="game1.html">Game1</a>
-        <a class="htext" href="uzdaviniai.html">Exercise</a>
-        <a id="logo" href="index.html">JoRa</a>
+        <a id="logo" onmouseover="logo1()" onmouseout="logo2()" href="index.html">Home Page</a>
+        <a class="htext" id="pak1" onmouseover="changefont1()" onmouseout="changeall1()" href="cv.html">CV</a>
+        <a class="htext" id="pak2" onmouseover="changefont2()" onmouseout="changeall2()" href="game1.html">Games</a>
+        <a class="htext" id="pak3" onmouseover="changefont3()" onmouseout="changeall3()" href="uzdaviniai.html">Exercises</a>
+        <a class="htext" id="pak4" onmouseover="changefont4()" onmouseout="changeall4()" href="fishing.html">Fishing</a>
     </div>
-    <h1>Joana Radzeviciute</h1>
-    <p>You can finde all my personal data and projects</p>
-    <p>Just pick up data you are intrested from the top of the header</p>
-</div>
+    <div class="mainas">
+        <div class="textm">
+            <div><img src="img/jora.jpg" style="height: 150px"></div>
+            <div>
+                <h2>Hi! I am</h2>
+                <h2>Joana Radzeviciute</h2>
+                <p>You can find all my personal data and projects</p>
+                <p>Just pick up data you are interested:</p>
+            </div> 
+         </div>
+    <div class="list">
+        <div class="colum">
+                <div class="tagapp">
+                    <a class="htext" href="cv.html">CV >>></a>
+                    <p>My working and learning expirience. Now I am learning to code with CSS, HTML, JavaScript, C#. I have mechanical enginiering Master degree. At the last job I was I started as an assistant and finished as a person who worked with Eshop, database and Tool24 Smartline - tool issuing system.</p>
+                    <a href="https://www.linkedin.com/in/joana-radzevičiūtė-58872042/" style="text-decoration: none"><img src="img/linkedin.png" style="width:95px" ></a> 
+            </div>
+                <div class="tagapp"><a class="htext" href="game1.html">Games >>></a> 
+                    <p>I am trying to create some of them, please check it. I love playing games now my best game is SWGOH.</p>
+                    </div>
+            </div>
+        <div class="colum" >
+                <div class="tagapp"><a class="htext" href="uzdaviniai.html">Exercises >>></a> 
+                    <p>I am learning coding so where is some exercises which I am solving. Also direction to my GitHub.</p>
+                    <a href="https://github.com/joranadz" style="text-decoration: none"><img src="img/GitHub.png" style=" width: 40px" ></a>                    
+                    </div>
+                <div class="tagapp"><a class="htext" href="fishing.html">Fishing >>></a> 
+                    <p>My new hobby is fishing so here you can find my succees in fishing. With some photos.</p>
+                    </div>
+            </div>
+        <div class="colum" >
+            <div class="tagapp"><a class="htext" href="http://joranadz.site">My Eshop >>></a>
+            <p>This is my Eshop created with WordPress. In this page were is my "PlugIn" with JavaScript. With this "PlugIn" you can create your own bracelet.</p>
+                    <a class="htext" href="http://joranadz.site/apyranke/">Apyrankė</a>                    
+                    </div>
+                <div class="tagapp" style="display: none">
+                    </div>
+        </div>
+                </div> 
+            </div>
+    </div>
+    <script src="style/skaiciavimas.js"></script>
 </body>
 </html>
