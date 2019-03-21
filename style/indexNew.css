@@ -1,0 +1,12 @@
+#header{
+    height: 60px;
+    padding: 5px;
+    display: flex;
+    /*justify-content: center;*/
+    align-content: center;
+    border: 2px solid black;
+
+}#header a{
+    text-decoration: none;
+
+ }
