@@ -1,0 +1,201 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+#main {
+    height: 600px;
+    width: 600px;
+    padding: 15px;
+    background-color: #f4fdb2;
+    font-family: 'Margarine', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 5px solid #f2fca2;
+    border-radius: 25px;
+}
+
+#main p {
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 12px;
+    text-align: justify;
+}
+
+.spinGo {
+    display: flex;
+    justify-content: space-around;
+    background-color: #edfb81;
+    border-radius: 25px;
+    margin: 10px;
+}
+
+#create {
+    width: 80px;
+    height: 50px;
+    background-color: #7b8a04;
+    color: #edfb81;
+    border: 5px outset white;
+    border-radius: 20px;
+    margin-top: 45px;
+    margin-left: 35px;
+}
+
+.table {
+    width: 350px;
+    height: 100px;
+    background-color: #8a9a05;
+    border: 8px inset #98ab05;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px;
+}
+
+.eye {
+    width: 40px;
+    height: 40px;
+    background-image: url(img/one.png);
+    transition: all 0.3s;
+    animation-name: anim;
+    animation-duration: 1s;
+}
+
+h3 {
+    margin: 2px;
+    padding: 2px;
+
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.dice {
+    width: 35px;
+    height: 10px;
+    background-color: grey;
+    border-style: outset;
+    font-size: 2px;
+    border-radius: 2px;
+}
+
+@keyframes anim {
+    from {
+        transform: rotate(0deg);
+        transition: all .5s linear;
+    }
+    to {
+        transform: rotate(360deg);
+        transition: all .5s linear;
+    }
+}
+
+.grid {
+    padding: 5px;
+    margin: 2px;
+    font-weight: bold;
+}
+
+.grid button {
+    width: 35px;
+    height: 25px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #98ab05;
+    border: 2px outset #5e6903;
+    color: white;
+}
+
+#tablee button {
+    width: 35px;
+    height: 25px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #98ab05;
+    border: 2px outset #5e6903;
+    color: white;
+}
+
+.grid input {
+    width: 35px;
+    height: 20px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #d1aa29;
+    border-style: inset;
+    border-left-color: firebrick;
+}
+
+#tablee {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    padding: 5px;
+    margin: 2px;
+}
+
+#tablee input {
+    width: 35px;
+    height: 20px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #d1aa29;
+    border-style: inset;
+    border-left-color: firebrick;
+}
+
+#all {
+    width: 55px;
+    height: 30px;
+    text-align: center;
+    font-size: 16px;
+    background-color: chocolate;
+    border-style: none;
+    border-radius: 6px;
+    color: black;
+    font-weight: bold;
+
+
+}
+
+p {
+    margin: 2px;
+    padding: 2px;
+    padding-left: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.scores {
+    width: 300px;
+    height: 50px;
+    background-color: #8a9a05;
+    border: 3px inset #98ab05;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px;
+}
+
+#submitAll {
+    width: 60px;
+    height: 30px;
+    background-color: #7b8a04;
+    color: #edfb81;
+    border: 2px outset white;
+    border-radius: 5px;
+}
+#all{
+    width: 60px;
+    height: 30px;
+    background-color: #edfb81;
+    color: black;
+    border: 2px outset white;
+    border-radius: 5px;
+}

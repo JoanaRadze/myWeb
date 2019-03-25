@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yatzy</title>
+    <link href="https://fonts.googleapis.com/css?family=Margarine" rel="stylesheet">
+    <link rel="stylesheet" href="yatzy.css">
+</head>
+<body>
+<div id="main">
+    <div class="spinGo">
+        <input type="button" onclick="clickCounting()" id="create" value="SPIN"/>
+        <div id="kount" style="display: block"></div>
+        <div class="table">
+            <div class="eye" id="oneye"><p id="one"></p></div>
+            <div class="eye" id="tweye"><p id="two"></p></div>
+            <div class="eye" id="theye"><p id="three"></p></div>
+            <div class="eye" id="foeye"><p id="four"></p></div>
+            <div class="eye" id="fieye"><p id="five"></p></div>
+        </div>
+        <div id="alldices" style="display: none"></div>
+    </div>
+    <div class="spinGo">
+        <table class="grid">
+            <tr>
+                <td>One's</td>
+                <td>
+                    <button id="ones" onclick="changeColor(this)"></button>
+                </td>
+                <td><input type="text" id="p1" value="0"></td>
+
+            </tr>
+            <tr>
+                <td>Two's</td>
+                <td>
+                    <button id="twos" onclick="changeColor(this)"></button>
+                </td>
+                <td><input type="text" id="p2" value="0"></td>
+            </tr>
+            <tr>
+                <td>Three's</td>
+                <td>
+                    <button id="threes" onclick="changeColor(this)"></button>
+                </td>
+                <td><input type="text" id="p3" value="0"></td>
+            </tr>
+            <tr>
+                <td>Four's</td>
+                <td>
+                    <button id="fours" onclick="changeColor(this)"></button>
+                </td>
+                <td><input type="text" id="p4" value="0"></td>
+            </tr>
+            <tr>
+                <td>Five's</td>
+                <td>
+                    <button id="fives" onclick="changeColor(this)"></button>
+                </td>
+                <td><input type="text" id="p5" value="0"></td>
+            </tr>
+            <tr>
+                <td>Sixe's</td>
+                <td>
+                    <button id="sixs" onclick="changeColor(this)"></button>
+                </td>
+                <td><input type="text" id="p6" value="0"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><input type="text" id="allp" value="0"></td>
+            </tr>
+            <tr>
+                <td>Bonus</td>
+                <td></td>
+                <td><input type="text" id="p8" value="0"></td>
+            </tr>
+
+
+        </table>
+
+        <table id="tablee">
+            <tr>
+                <td><h3>Three Of A Kind: </h3></td>
+                <td>
+                    <button id="threeOfKind" onclick="changeColor(this)"></button>
+                </td>
+                <td><input type="text" id="p9" value="0"></td>
+            </tr>
+            <tr>
+                <td><h3>Four Of A Kind: </h3></td>
+                <td>
+                    <button id="fourOfKind" onclick="changeColor(this)"></button>
+                </td>
+                <td><input type="text" id="p10" value="0"></td>
+            </tr>
+            <tr>
+                <td><h3>Full House: </h3></td>
+                <td>
+                    <button id="fullh" onclick="changeColor(this)"></button>
+                </td>
+                <td><input type="text" id="p11" value="0"></td>
+            </tr>
+            <tr>
+                <td><h3>Small Straight: </h3></td>
+                <td>
+                    <button id="Sstraight" onclick="changeColor(this)"></button>
+                </td>
+                <td><input type="text" id="p12" value="0"></td>
+            </tr>
+            <tr>
+                <td><h3>Big Straight: </h3></td>
+                <td>
+                    <button id="Bstraight" onclick="changeColor(this)"></button>
+                </td>
+                <td><input type="text" id="p13" value="0"></td>
+            </tr>
+            <tr>
+                <td><h3>Yahtzee!! </h3></td>
+                <td>
+                    <button id="yatzy" onclick="changeColor(this)"></button>
+                </td>
+                <td><input type="text" id="p14" value="0"></td>
+            </tr>
+            <tr>
+                <td><h3>Chance</h3></td>
+                <td>
+                    <button id="akys" onclick="changeColor(this)"></button>
+                </td>
+                <td><input type="text" id="p15" value="0"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="scores"><h3>All points: </h3>
+        <form action="scores.php" method="get">
+            <input id="all" name="all" type="text" value="0">
+            <input type="submit" id="submitAll" for="all" style="display: none">
+        </form>
+
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="yatzy.js"></script>
+
+
+</body>
+</html>
