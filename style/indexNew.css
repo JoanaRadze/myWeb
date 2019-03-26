@@ -62,42 +62,74 @@
     color: #0fa00f;
     z-index: 1;
 }
-.icons{
+
+.icons {
     width: 10%;
     display: flex;
     padding: 15px 45px 15px 15px;
     justify-content: space-around;
 }
-.icons a:hover{
+
+.icons a:hover {
     background-color: red;
     padding: 65px 10px 45px;
 }
-main{
-    font-family: Carrois Gothic SC,sans-serif;
+
+main {
     padding-top: 65px;
     display: flex;
     flex-direction: row;
-
 }
-.main {
+
+.allHiden {
     height: 700px;
     width: 90%;
-    background-image: url("../img/zigzag1.jpg");
-    display: none;
-    flex-direction: column;
-    justify-content: space-around;
-    align-content: space-around;
+    font-family: Carrois Gothic SC, sans-serif;
+    font-size: 16px;
+    background-color: #f3ffe4;
+    /*background-image: url("../img/zigzag2.png");*/
 }
-#main{
+h3{
+    font-size: 28px;
+    padding: 5px;
+}
+.main {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    font-size: 18px;
+    flex-direction: column;
+    text-align: justify;
+    /*padding: 25px;*/
+    margin: 15px;
+}
+p{
+    margin: 5px;
+}
+.main {
+    display: none;
+}
+
+#main {
     display: flex;
 }
-.sideBar{
+
+.sideBar {
     height: 700px;
     width: 5%;
     background-image: url("../img/redcurt3.jpg");
 }
-.colum{
+
+.colum {
     height: 100px;
     width: 80%;
     background-color: white;
+}
+footer{
+    /*background-color: #becfc7;*/
+    background-image: url("../img/zigzag2.png");
+    height: 30px;
+    color: red;
+    padding-top: 10px;
+    text-align: center;
 }
