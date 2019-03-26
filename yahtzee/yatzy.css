@@ -14,6 +14,7 @@ body {
     justify-content: center;
     border: 5px solid #f2fca2;
     border-radius: 25px;
+    text-align: center;
 }
 
 #main p {
@@ -198,4 +199,10 @@ p {
     color: black;
     border: 2px outset white;
     border-radius: 5px;
+}
+.intro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
 }

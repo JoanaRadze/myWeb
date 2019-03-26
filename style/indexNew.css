@@ -1,12 +1,103 @@
-#header{
+.header {
+    border-bottom: 0px solid #dfd1d2;
+    width: 100%;
     height: 60px;
-    padding: 5px;
     display: flex;
-    /*justify-content: center;*/
-    align-content: center;
-    border: 2px solid black;
+    justify-content: space-between;
+    flex-direction: row;
+    background-image: url('../img/redcurt3.jpg');
+    padding-bottom: 0px;
+    padding-top: 9px;
+    padding-left: 15px;
+    position: fixed;
+    z-index: 1;
+}
 
-}#header a{
+.meniu {
+    display: flex;
+}
+
+.meniu button {
+    width: 130px;
     text-decoration: none;
+    font-size: 26px;
+    font-family: Carrois Gothic SC, sans-serif;
+    color: #0fa00f;
+    height: 100%;
+    background-color: unset;
+    border: 0px solid #fff;
+}
 
- }
+.meniu button:hover {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: Carrois Gothic SC, sans-serif;
+    color: #d6220c;
+}
+
+.mb:hover .pt {
+    display: block;
+    font-family: Carrois Gothic SC, sans-serif;
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+.pt:hover {
+    text-decoration: none;
+    font-weight: bold;
+    color: #d6220c;
+    position: relative;
+}
+
+.pt {
+    height: 30px;
+    width: 110px;
+    font-size: 14px;
+    padding-top: 15px;
+    padding-left: 15px;
+    background-image: url('../img/redcurt3.jpg');
+    display: none;
+    color: #0fa00f;
+    z-index: 1;
+}
+.icons{
+    width: 10%;
+    display: flex;
+    padding: 15px 45px 15px 15px;
+    justify-content: space-around;
+}
+.icons a:hover{
+    background-color: red;
+    padding: 65px 10px 45px;
+}
+main{
+    font-family: Carrois Gothic SC,sans-serif;
+    padding-top: 65px;
+    display: flex;
+    flex-direction: row;
+
+}
+.main {
+    height: 700px;
+    width: 90%;
+    background-image: url("../img/zigzag1.jpg");
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+}
+#main{
+    display: flex;
+}
+.sideBar{
+    height: 700px;
+    width: 5%;
+    background-image: url("../img/redcurt3.jpg");
+}
+.colum{
+    height: 100px;
+    width: 80%;
+    background-color: white;
+}

@@ -305,15 +305,16 @@ document.getElementById("create").addEventListener("click", function () {
 
     ///full house    
     var twoKind = str.match(/1,1|2,2|3,3|4,4|5,5|6,6/g);
-    let twoKinds=String(twoKind);
-    let threeKinds=String(threeKind);
-    if (twoKinds[0] !== threeKinds[0] && twoKinds[1] !== threeKinds[0]) {
-        if (twoKinds && threeKind) {
+    let twoKinds = String(twoKind);
+    let threeKinds = String(threeKind);
+    console.log(twoKinds[0] + twoKinds[1] + twoKinds[2] + " pirmas");
+    console.log(twoKinds[4] + " antras");
+    console.log(threeKind + " trysvienodi");
+
+    if (twoKinds[4] !== undefined) {
+        if (twoKinds[4] !== twoKinds[0]&&threeKind !== null) {
             document.getElementById("fullh").value = 25;
             document.getElementById("fullh").innerHTML = 25;
-        } else {
-            document.getElementById("fullh").value = 0;
-            document.getElementById("fullh").innerHTML = 0;
         }
     } else {
         document.getElementById("fullh").value = 0;
